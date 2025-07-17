@@ -55,6 +55,39 @@ const createContactPage = () => {
   pageContent.appendChild(restaurantNumber);
 
 
+  const form = document.createElement('form');
+  form.classList.add('contact-form');
+
+  const nameInput = document.createElement('input');
+  nameInput.type = 'text';
+  nameInput.placeholder = 'Name';
+  form.appendChild(nameInput);
+
+  const phoneInput = document.createElement('input');
+  phoneInput.type = 'text';
+  phoneInput.placeholder = 'Phone Number';
+  form.appendChild(phoneInput);
+
+  const emailInput = document.createElement('input');
+  emailInput.type = 'email';
+  emailInput.placeholder = 'Email';
+  form.appendChild(emailInput);
+
+  const messageInput = document.createElement('input');
+  messageInput.type = 'textarea';
+  messageInput.placeholder = 'Message';
+  form.appendChild(messageInput);
+
+  const submitBtn = document.createElement('button');
+  submitBtn.classList.add('submit-btn');
+  submitBtn.type = 'submit';
+  submitBtn.textContent = 'Send';
+ 
+
+  pageContent.appendChild(form);
+  pageContent.appendChild(submitBtn);
+
+
 
 
   content.appendChild(pageContent);
