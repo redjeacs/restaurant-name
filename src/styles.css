@@ -4,10 +4,16 @@
   margin: 0;
 }
 
+body {
+  background-image: url('./assets/front-page-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 header {
   width: 100vw;
   height: 10vh;
-  background-color: black;
+  background-color: rgb(0, 0, 0, 0.7);
   margin-bottom: 20px;
   padding: 20px;
   padding-bottom: 0;
@@ -16,37 +22,82 @@ header {
   justify-content: center;
 }
 
+nav {
+  display: flex;
+  width: clamp(320px, 100%, 1000px);
+  justify-content: center;
+}
+
 .tab {
-  padding: 10px 20px;
+  width: 150px;
+  height: 50px;
   border: 1px solid black;
   border-radius: 5px 5px 0 0;
   border-bottom: none;
   margin: 0 10px;
   font-weight: bold;
   cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border-color: white;
 }
 
 #content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  height: 100vh;
+  width: 100vw;
 }
 
 .page-content {
-  display: flex;
-  flex-direction: column;
-  width: 700px;
-  height: 800px;
+  width: clamp(300px, 50%, 700px);
+  max-height: 100vh;
   border: 1px solid black;
   border-radius: 25px;
   padding: 50px;
+  background-color: rgb(0, 0, 0,  0.8);
+  color: white;
+}
+
+.restaurant-name {
+  margin-bottom: 20px;
+  font-size: clamp(60px, 60px);
+}
+
+.front-page-img {
+  width: clamp(200px, 100%, 700px);
+}
+
+.description {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.menu {
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+
+.menu-sections {
+  margin-bottom: 50px;
+}
+
+.menu-section-names {
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+li {
+  margin: 10px 0;
+  list-style-type: none;
 }
 
 .contact {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 200;
-  color: rgb(59, 59, 59);
+  color: rgb(212, 212, 212);
 }
 
 .medias {
@@ -65,19 +116,20 @@ header {
 
 .contact-form {
   display: grid;
-  grid-template-columns: repeat(2, 300px);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  width: 400px;
+  width: clamp(100%, 400px);
   margin-bottom: 20px;
 }
 
 input {
   height: 40px;
+  width: clamp(50px, 100%, 400px);
   padding: 0 12px;
 }
 
 .submit-btn {
-  width: 200px;
+  width: clamp(100%, 200px, 100%);
   padding: 10px;
   border: none;
   border-radius: 10px;
