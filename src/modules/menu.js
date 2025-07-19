@@ -55,7 +55,7 @@ const createMenuPage = () => {
   const section3 = document.createElement('div');
   pageContent.appendChild(section3);
   const drinks = document.createElement('h2');
-  drinks.textContent = 'Meat & Viscera';
+  drinks.textContent = 'Drinks';
   section3.appendChild(drinks);
   const drinksList = document.createElement('ul')
   section3.appendChild(drinksList);
