@@ -6,7 +6,7 @@ import createTabs from './website';
 
 function initialLoad() {
   createTabs();
-  createMenuPage();
+  createRestaurantHomePage();
 }
 
 export default initialLoad; //the default function to be imported by index.js

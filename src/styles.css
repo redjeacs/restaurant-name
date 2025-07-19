@@ -16,13 +16,14 @@ header {
   justify-content: center;
 }
 
-nav > button {
+.tab {
   padding: 10px 20px;
   border: 1px solid black;
   border-radius: 5px 5px 0 0;
   border-bottom: none;
   margin: 0 10px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 #content {
